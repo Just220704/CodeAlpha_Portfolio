@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f5f7fa;
+    color: #2d2d2d;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;   /* reduced padding */
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.logo {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    padding: 60px 20px;   /* reduced height */
+    text-align: center;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 32px;      /* smaller heading */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;      /* clean subtitle size */
+    color: #cbd5e1;
+}
+
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #0f172a;
+}
+
+/* Light background section */
+.bg-light {
+    background: #ffffff;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills span {
+    background: #e2e8f0;
+    color: #0f172a;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+/* Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0f172a;
+    color: #cbd5e1;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
